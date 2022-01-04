@@ -31,7 +31,7 @@ function Navbar() {
             <div className="flex justify-center items-center mx-8   absolute left-0 right-0 top-[7rem]  content-center">
               <PageLinks
                 display={`flex flex-col  bg-white  md:hidden  items-center rounded-md  border mx-auto gap-4 py-4 w-[30rem] bg:black`}
-                link={`text-black after:content-none`}
+                link={`text-black after:content-none focus:after:content-none`}
               />
             </div>
           </div>
