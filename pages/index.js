@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import HeaderSection from "../components/HeaderSection";
 
 export default function Home() {
   return (
     <div className="font-public">
       <Head>
-        <title> EasyBand-landing-page </title>
+        <title> EasyBank-landing-page </title>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
@@ -13,6 +14,7 @@ export default function Home() {
         />
       </Head>
       <Navbar />
+      <HeaderSection />
     </div>
   );
 }

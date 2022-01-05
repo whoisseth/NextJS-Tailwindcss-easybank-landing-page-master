@@ -13,20 +13,20 @@ function Navbar() {
   }
   return (
     <>
-      <div className="flex  justify-between py-6 px-6 md:px-28  items-center border">
+      <div className="flex  justify-between py-6 px-6 md:px-28  items-center border z-20">
         <Logo />
         <PageLinks display={`hidden`} />
         <BtnRequestInvite />
         {showMe ? (
           <MenuIcon
             onClick={toggle}
-            className="h-8 md:hidden cursor-pointer transition ease-in-out delay-300  "
+            className="h-8 md:hidden cursor-pointer transition ease-out delay-300  "
           />
         ) : (
           <div>
             <CgClose
               onClick={toggle}
-              className="relative  w-8 h-8 md:hidden cursor-pointer transition ease-in-out delay-300  "
+              className="relative  w-8 h-8 md:hidden cursor-pointer transition ease-in delay-300  "
             />
             <div className="flex justify-center items-center mx-8   absolute left-0 right-0 top-[7rem]  content-center">
               <PageLinks
