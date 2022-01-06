@@ -5,11 +5,11 @@ import bgIntroMobile from "/images/bg-intro-mobile.svg";
 import mockups from "../images/image-mockups.png";
 function HeaderRightImageContainer() {
   return (
-    <div className="order-1 md:order-2 static  overflow-hidden  h-[35rem]   ">
+    <div className="order-1 md:order-2 static  overflow-hidden  h-[35rem] mb-[-8rem] md:mb-0  ">
       <div className=" hidden md:block relative h-[66rem] w-[66rem]  top-[-20rem] ">
         <Image layout="fill" objectFit="contain" src={bgIntroDesktop} />
       </div>
-      <div className="  md:hidden relative h-[30rem] w-[30rem]  top-[-2rem] ">
+      <div className=" md:hidden relative h-[30rem] w-[30rem]  top-[-2rem] ">
         <Image layout="fill" objectFit="contain" src={bgIntroMobile} />
       </div>
 
