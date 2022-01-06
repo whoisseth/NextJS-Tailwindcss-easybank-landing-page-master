@@ -13,7 +13,7 @@ function Navbar() {
   }
   return (
     <>
-      <div className="flex  justify-between py-6 px-6 md:px-28  items-center border z-20">
+      <div className="flex  justify-between py-6 px-6 md:px-28  items-center border sticky top-0 z-50  ">
         <Logo />
         <PageLinks display={`hidden`} />
         <BtnRequestInvite />

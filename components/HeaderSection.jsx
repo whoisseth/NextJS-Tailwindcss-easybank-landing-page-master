@@ -1,31 +1,21 @@
 import Image from "next/image";
 import bgIntroDesktop from "../images/bg-intro-desktop.svg";
-import BtnRequestInvite from "./BtnRequestInvite";
+import mockups from "../images/image-mockups.png";
+import NextGenerationBox from "./NextGenerationBox";
 function HeaderSection() {
   return (
     <>
-      <div className="md:pl-28 grid grid-cols-2 shadow-sm overflow-hidden  ">
-        <div className="flex flex-col justify-center w-[25rem] ">
-          <div className="text-5xl text-[#2d314d] mb-6">
-            Next generation digital banking
+      <div className=" md:pl-28 flex   place-items-center shadow-md  h-[35rem]   ">
+        <NextGenerationBox />
+        <div className="static  overflow-hidden  h-[35rem]   ">
+          <div className="-z-50 relative h-[66rem] w-[66rem]  top-[-20rem]">
+            <Image layout="fill" objectFit="contain" src={bgIntroDesktop} />
           </div>
-          <div className="text-gray-400 mb-6">
-            Take your financial life online. Your Easybank account will be a
-            one-stop-shop for spending, saving, budgeting, investing, and much
-            more.
+          <div className="overflow-hidden w-[30rem]">
+            <div className=" overflow-x-hidden  absolute right-[-11.4rem] top-[0rem]    w-[50rem] h-[50rem] ">
+              <Image layout="fill" objectFit="contain" src={mockups} />
+            </div>
           </div>
-          <div>
-            <BtnRequestInvite />
-          </div>
-        </div>
-        {/* <div className=" absolute top-[-20rem] right-[-20rem] h-[100vh] w-[10]"> */}
-        <div className="bg-red-400  right-0">
-          <Image
-            className=" "
-            width={900}
-            // height={`100%`}
-            src={bgIntroDesktop}
-          />
         </div>
       </div>
     </>

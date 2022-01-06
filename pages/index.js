@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import HeaderSection from "../components/HeaderSection";
+// import WhychooseEasyBank from "../components/WhychooseEasyBank";
 
 export default function Home() {
   return (
-    <div className="font-public">
+    <div className="  font-public">
       <Head>
         <title> EasyBank-landing-page </title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <HeaderSection />
+      {/* <WhychooseEasyBank /> */}
     </div>
   );
 }
