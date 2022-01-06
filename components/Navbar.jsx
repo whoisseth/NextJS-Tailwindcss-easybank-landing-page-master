@@ -13,10 +13,10 @@ function Navbar() {
   }
   return (
     <>
-      <div className="flex  justify-between py-6 px-6 md:px-28  items-center border sticky top-0 z-50  ">
+      <div className="flex  justify-between py-6 px-6 md:px-28  items-center  sticky top-0 z-50  bg-white ">
         <Logo />
         <PageLinks display={`hidden`} />
-        <BtnRequestInvite />
+        <BtnRequestInvite hide={"hidden"} />
         {showMe ? (
           <MenuIcon
             onClick={toggle}
