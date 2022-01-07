@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import HeaderSection from "../components/HeaderSection";
-// import WhychooseEasyBank from "../components/WhychooseEasyBank";
-
+import WhychooseEasyBank from "../components/WhychooseEasyBank";
+import { cart } from "./api/data";
 export default function Home() {
+  console.log(cart);
   return (
     <div className="  font-public">
       <Head>

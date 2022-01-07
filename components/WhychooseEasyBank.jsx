@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import OnlineIcon from "/images/icon-online.svg";
-
+import Cart from "./Cart";
+import { cart } from "../pages/api/data";
 function WhychooseEasyBank() {
+  console.log(cart);
   return (
     <>
       <div className="md:px-28 bg-gray-100">
@@ -15,22 +16,15 @@ function WhychooseEasyBank() {
             financial hub. Control your finances like never before.
           </div>
         </div>
-        <div>
-          <div className="flex flex-col w-[16.5rem] align-left mb-24">
-            <div className="mb-4">
-              <Image
-                src={OnlineIcon}
-                width={48}
-                height={48}
-                objectFit="contain"
-              />
-            </div>
-            <div className="text-lg mb-4">Online Banking</div>
-            <div className="text-gray-400 ">
-              Our modern web and mobile applications allow you to keep track of
-              your finances wherever you are in the world.
-            </div>
-          </div>
+        <div className="flex gap-8">
+          <Cart
+            add={cart[1].cartImgAddress.onlineIcon.src}
+            name={cart[1].cartName}
+            para={cart[1].cartPara}
+          />
+          <Cart />
+          <Cart />
+          <Cart />
         </div>
       </div>
     </>
