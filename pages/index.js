@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeaderSection from "../components/HeaderSection";
 import WhychooseEasyBank from "../components/WhychooseEasyBank";
 import { cart } from "./api/data";
+
 export default function Home() {
   console.log(cart);
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <HeaderSection />
-      {/* <WhychooseEasyBank /> */}
+      <WhychooseEasyBank />
     </div>
   );
 }
