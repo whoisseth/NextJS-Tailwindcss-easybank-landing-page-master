@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import HeaderSection from "../components/HeaderSection";
 import WhychooseEasyBank from "../components/WhychooseEasyBank";
+import LatestArticles from "../components/LatestArticles";
 import { cart } from "./api/data";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Navbar />
       <HeaderSection />
       <WhychooseEasyBank />
+      <LatestArtDicles />
     </div>
   );
 }
