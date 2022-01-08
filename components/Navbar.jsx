@@ -13,7 +13,7 @@ function Navbar() {
   }
   return (
     <>
-      <div className="flex  justify-between py-6 px-6 md:px-28  items-center  sticky top-0 z-50  bg-white ">
+      <div className="flex  justify-between py-6 px-6 md:px-24  items-center  sticky top-0 z-50  bg-white ">
         <Logo />
         <PageLinks display={`hidden`} />
         <BtnRequestInvite hide={"hidden"} />
@@ -30,8 +30,9 @@ function Navbar() {
             />
             <div className="flex justify-center items-center mx-8   absolute left-0 right-0 top-[7rem]  content-center">
               <PageLinks
-                display={`flex flex-col  bg-white  md:hidden  items-center rounded-md  border mx-auto gap-4 py-4 w-[30rem] bg:black`}
-                link={`text-black after:content-none focus:after:content-none`}
+                display={`flex   flex-col  bg-white  md:hidden  items-center rounded-md   mx-auto gap-4 py-4 w-[30rem] bg:black   `}
+                // display={"md:flex gap-8 text-gray-400"}
+                link={`text-black md:after:content-['']`}
               />
             </div>
           </div>

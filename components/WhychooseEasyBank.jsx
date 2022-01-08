@@ -6,7 +6,7 @@ function WhychooseEasyBank() {
   // console.log(cart);
   return (
     <>
-      <div className="px-10   md:px-28 bg-gray-100  pb-24 ">
+      <div className="px-10   md:px-24 bg-gray-100  pb-24 ">
         <div className="text-center md:text-left w-auto md:w-[36rem] pt-24 mb-12 ">
           <div className="  text-4xl  mb-4 font-public">
             Why choose Easybank?

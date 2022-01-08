@@ -7,7 +7,7 @@ import NextGenerationBox from "./NextGenerationBox";
 function HeaderSection() {
   return (
     <>
-      <div className=" md:pl-28 flex flex-col md:flex-row   place-items-center md:h-[35rem] overflow-hidden  md:overflow-auto  ">
+      <div className=" md:pl-24 flex flex-col md:flex-row   place-items-center md:h-[35rem] overflow-hidden  md:overflow-auto  ">
         <NextGenerationBox />
         <HeaderRightImageContainer />
       </div>
