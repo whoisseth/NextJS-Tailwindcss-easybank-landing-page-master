@@ -20,7 +20,7 @@ export default function Home() {
       <Navbar />
       <HeaderSection />
       <WhychooseEasyBank />
-      <LatestArtDicles />
+      <LatestArticles />
     </div>
   );
 }
