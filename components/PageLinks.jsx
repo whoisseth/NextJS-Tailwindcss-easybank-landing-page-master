@@ -7,7 +7,7 @@ function PageLinks({ display, link, nav, footer, md, menu }) {
       className={`${
         nav
           ? `hidden grid md:grid-row-1      place-content-center rounded-md   mx-auto gap-4 py-4  bg:black  md:flex gap-8 text-gray-400  `
-          : "grid md:grid-cols-2 gap-4 md:gap-2 md:gap-x-12 text-center mb-8"
+          : "grid md:grid-cols-2 gap-4 md:gap-2 md:gap-x-12 text-center md:text-left mb-8"
       } ${menu}`}
     >
       {footer ? (
