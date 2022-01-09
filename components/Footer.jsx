@@ -12,17 +12,24 @@ import BtnRequestInvite from "./BtnRequestInvite";
 function Footer() {
   return (
     <>
-      <div className=" bg-[#2d314d] px-10 md:px-24 py-10 grid grid-cols-1 md:grid-cols-3   place-items-center md:place-items-start">
-        <div className="1">
-          <FooterLogo />
-          <SocialMediaLinks />
+      <div
+        className=" bg-[#2d314d] px-10 md:px-24 py-10 flex flex-col md:flex-row  place-items-center  
+      justify-auto md:justify-between  "
+      >
+        <div className="flex flex-col  md:flex-row  gap-4 md:gap-16 lg:gap-36">
+          <div className="1 ">
+            <FooterLogo />
+            <SocialMediaLinks />
+          </div>
+          <PageLinks
+            display={
+              " grid md:grid-cols-2 gap-2 md:gap-x-12 text-center mb-8  "
+            }
+            link={"text-white hover:text-green-400 md:after:content-none"}
+            footer={true}
+          />
         </div>
-        {/* <div className="bg-red-400 w-auto grid grid-cols-1 md:grid-cols-2"> */}
-        <PageLinks
-          display={"2 grid md:ird-cols-2 gap-5 text-center mb-8"}
-          link={"text-white hover:text-green-400 md:after:content-none"}
-        />
-        <div className=" 3 flex flex-col items-center md:items-start gap-4">
+        <div className="2 flex flex-col items-center md:items-end gap-4  text-right  ">
           <div className="">
             <BtnRequestInvite />
           </div>
@@ -48,10 +55,10 @@ function FooterLogo() {
   );
 }
 function SocialMediaLinks() {
-  const svgStyle = "h-6 w-6  fill-white hover:fill-green-400 mb-8";
+  const svgStyle = "h-6 w-6  fill-white hover:fill-green-400 ";
   return (
     <>
-      <div className="socialLinks flex gap-2">
+      <div className=" flex gap-2">
         <Link href="/">
           <a>
             <IoLogoFacebook className={svgStyle} />
